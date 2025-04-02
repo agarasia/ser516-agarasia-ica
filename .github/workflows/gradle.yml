@@ -46,8 +46,6 @@ jobs:
     #
     # - name: Build with Gradle 8.9
     #   run: gradle build
-
-  jobs:
     test:
       runs-on: ubuntu-latest
       permissions:
@@ -69,7 +67,6 @@ jobs:
               ./gradlew test
             else
               ./gradlew test --tests "com.gradle.tutorial.BranchTests"
-            fi
 
   dependency-submission:
 
